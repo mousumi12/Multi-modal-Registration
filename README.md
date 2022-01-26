@@ -26,8 +26,8 @@ $ python train.py
 
 To change some default settings, pass those to the command line, such as:
 
-$ python train.py  \\
-    --X=data/tfrecords/HE.tfrecords \\
+$ python train.py  \  \
+    --X=data/tfrecords/HE.tfrecords \  \
     --Y=data/tfrecords/Ki67.tfrecords
     
 Here is the list of arguments:
@@ -51,7 +51,7 @@ optional arguments:
   --nouse_lsgan         \
   --norm NORM           [instance, batch] use instance norm or batch norm,
                         default: instance \
-  --lambda1 LAMBDA1     weight for forward cycle loss (X->Y->X), default: 10.0
+  --lambda1 LAMBDA1     weight for forward cycle loss (X->Y->X), default: 10.0 \
   --lambda2 LAMBDA2     weight for backward cycle loss (Y->X->Y), default:
                         10.0
   --learning_rate LEARNING_RATE
