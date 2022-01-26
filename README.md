@@ -40,7 +40,7 @@ usage: train.py [-h] [--batch_size BATCH_SIZE] [--image_size IMAGE_SIZE]
                 [--load_model LOAD_MODEL]
 
 optional arguments:
-  -h, --help            show this help message and exit
+  -h, --help             show this help message and exit
   --batch_size BATCH_SIZE
                         batch size, default: 5
   --image_size IMAGE_SIZE
