@@ -35,14 +35,17 @@ $ python train.py  \  \
 
 Here is the list of arguments:
 
+```
 usage: train.py [-h] [--batch_size BATCH_SIZE] [--image_size IMAGE_SIZE]
                 [--use_lsgan [USE_LSGAN]] [--nouse_lsgan]
                 [--norm NORM] [--lambda1 LAMBDA1] [--lambda2 LAMBDA2]
                 [--learning_rate LEARNING_RATE] [--beta1 BETA1]
                 [--pool_size POOL_SIZE] [--ngf NGF] [--X X] [--Y Y]
                 [--load_model LOAD_MODEL]
+```
 
 optional arguments:
+```
   -h, --help             show this help message and exit \
   --batch_size BATCH_SIZE
                         batch size, default: 5 \
@@ -71,11 +74,13 @@ optional arguments:
   --load_model LOAD_MODEL
                         folder of saved model that you wish to continue
                         training (e.g. 20170602-1936), default: None
+```
 
 If the training process is halted and want to continue training, then the load_model parameter can be set like this.
+```
 $ python train.py  \
     --load_model 20170602-1936
-
+```
 ## Notes:
 - If high constrast background colors between input and generated images are observed (e.g. black becomes white), you should restart your training.
 - Train several times to get the best models.
