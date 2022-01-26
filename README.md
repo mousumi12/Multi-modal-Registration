@@ -89,10 +89,18 @@ $ python train.py
 Export from a checkpoint to a standalone GraphDef file as follow:
 
 ```
-$ python3 export_graph.py --checkpoint_dir checkpoints/${datetime} \
+$ python export_graph.py --checkpoint_dir checkpoints/${datetime} \
                           --XtoY_model HE2Ki67.pb \
                           --YtoX_model Ki672HE.pb \
                           --image_size 256
+```
+# Inference
+After exporting model, it can be used for inference. For example:
+```
+python inference.py --model pretrained/HE2Ki67.pb \
+                     --input input_sample.jpg \
+                     --output output_sample.jpg \
+                     --image_size 256
 ```
 
 
