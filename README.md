@@ -113,6 +113,11 @@ python inference.py --model pretrained/HE2Ki67.pb \
 
 ## Multi-scale FCN for image registration:
 
+Move to the desired folder
+```
+$ cd MultiscaleFCN_Reg_synMonomodal
+```
+
 Tensorflow implementation of Multi-scale FCN
 
 ```
