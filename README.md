@@ -86,4 +86,13 @@ $ python train.py
 - Train several times to get the best models.
 
 # Export model
+Export from a checkpoint to a standalone GraphDef file as follow:
+
+```
+$ python3 export_graph.py --checkpoint_dir checkpoints/${datetime} \
+                          --XtoY_model HE2Ki67.pb \
+                          --YtoX_model Ki672HE.pb \
+                          --image_size 256
+```
+
 
