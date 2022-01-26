@@ -124,7 +124,7 @@ Tensorflow implementation of Multi-scale FCN
 # Training
 python train.py
 ```
-Intermediate results and model checkpoint can be found in tmp and ckpt each
+Intermediate results and model checkpoint can be found in tmp and ckpt
 
 ```
 # Inference
