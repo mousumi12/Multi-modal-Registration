@@ -26,8 +26,8 @@ $ python train.py
 
 To change some default settings, pass those to the command line, such as:
 
-$ python train.py  \
-    --X=data/tfrecords/HE.tfrecords \
+$ python train.py  \\
+    --X=data/tfrecords/HE.tfrecords \\
     --Y=data/tfrecords/Ki67.tfrecords
     
 Here is the list of arguments:
@@ -40,17 +40,17 @@ usage: train.py [-h] [--batch_size BATCH_SIZE] [--image_size IMAGE_SIZE]
                 [--load_model LOAD_MODEL]
 
 optional arguments:
-  -h, --help             show this help message and exit
+  -h, --help             show this help message and exit \
   --batch_size BATCH_SIZE
-                        batch size, default: 5
+                        batch size, default: 5 \
   --image_size IMAGE_SIZE
-                        image size, default: 256
+                        image size, default: 256 \
   --use_lsgan [USE_LSGAN]
                         use lsgan (mean squared error) or cross entropy loss,
-                        default: True
-  --nouse_lsgan
+                        default: True \
+  --nouse_lsgan         \
   --norm NORM           [instance, batch] use instance norm or batch norm,
-                        default: instance
+                        default: instance \
   --lambda1 LAMBDA1     weight for forward cycle loss (X->Y->X), default: 10.0
   --lambda2 LAMBDA2     weight for backward cycle loss (Y->X->Y), default:
                         10.0
