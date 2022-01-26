@@ -2,11 +2,16 @@
 
 ## Stage1:
 
-## CycleGAN-Tensorflow for image translation:
+## CycleGAN-Tensorflow-Breast for image translation:
 
 # Environment
 TensorFlow 1.0.0
 Python 3.6.0
+
+First move to the desired folder
+```
+$ cd CycleGAN-TensorFlow_Breast 
+```
 
 # Data preparing
 
@@ -17,14 +22,15 @@ $ bash download_dataset.sh HE2Ki67
 ```
 
 Write the dataset to tfrecords
-
+```
 $ python build_data.py
-
+```
 Check $ python3 build_data.py --help for more details.
 
 # Training
-
+```
 $ python train.py
+```
 
 To change some default settings, pass those to the command line, such as:
 ```
@@ -102,5 +108,25 @@ python inference.py --model pretrained/HE2Ki67.pb \
                      --output output_sample.jpg \
                      --image_size 256
 ```
+
+## Stage2:
+
+## Multi-scale FCN for image registration:
+
+Tensorflow implementation of Multi-scale FCN
+
+```
+# Training
+python train.py
+```
+Intermediate results and model checkpoint can be found in tmp and ckpt each
+
+```
+# Inference
+python deploy.py
+```
+Evaluation results can be found in result folder.
+
+
 
 
