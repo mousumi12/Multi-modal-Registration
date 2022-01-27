@@ -132,10 +132,9 @@ python deploy.py
 ```
 Evaluation results can be found in result folder.
 
-## Stage3:
 ## Comparison with other models
 
-- There are some standard registration models like DirNet, FCN which are compared for three different datasets which are multi-1, synmono-1 and synmono-2 respectively. For each model there are three different folders associated with each dataset.
+There are some standard registration models like DirNet, FCN which are compared for three different datasets which are multi-1, synmono-1 and synmono-2 respectively. For each model there are three different folders associated with each dataset.
 
 - DIRNet-tensorflow_MultiModal : DirNet model trained with multi-1 dataset
 - DIRNet-tensorflow_MonoModal_origCycleGAN : DirNet model trained with synmono-1 dataset
