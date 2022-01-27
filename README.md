@@ -113,7 +113,7 @@ python inference.py --model pretrained/HE2Ki67.pb \
 
 ## Multi-scale FCN for image registration:
 
-Move to the desired folder
+Move to the desired folderFCN_Reg_Orig
 ```
 $ cd MultiscaleFCN_Reg_synMonomodal
 ```
@@ -131,4 +131,37 @@ Intermediate results and model checkpoint can be found in tmp and ckpt
 python deploy.py
 ```
 Evaluation results can be found in result folder.
+
+## Stage3:
+## Comparison with other models
+
+- There are some standard registration models like DirNet, FCN which are compared for three different datasets which are multi-1, synmono-1 and synmono-2 respectively. For each model there are three different folders associated with each dataset.
+
+- DIRNet-tensorflow_MultiModal : DirNet model trained with multi-1 dataset
+- DIRNet-tensorflow_MonoModal_origCycleGAN : DirNet model trained with synmono-1 dataset
+- DIRNet-tensorflow_MonoModal_modCycleGAN : DirNet model trained with synmono-2 dataset
+- FCN_Reg_Orig: FCN model trained with multi-1 dataset
+- FCN_Reg_Monomodal_origCycleGAN : FCN model trained with synmono-1 dataset
+- FCN_Reg_Monomodal_modCycleGAN: FCN model trained with synmono-2 dataset
+
+Move to the desired folder
+```
+cd other_methods_forComparison/DIRNet-tensorflow_MultiModal
+```
+Tensorflow implementation of DirNet
+
+```
+# Training
+python train.py
+```
+Intermediate results and model checkpoint can be found in tmp and ckpt
+
+```
+# Inference
+python deploy.py
+```
+Evaluation results can be found in result folder.
+
+Similar for other comparison models.
+
 
